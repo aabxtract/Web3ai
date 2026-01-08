@@ -26,6 +26,7 @@ function Landing() {
             <ul className="nav-links">
               <li><a href="#services">Services</a></li>
               <li><a href="#portfolio">Portfolio</a></li>
+              <li><a href="#testimonials">Testimonials</a></li>
               <li><a href="#team">Team</a></li>
               <li><a href="#contact">Contact</a></li>
             </ul>
@@ -220,6 +221,195 @@ function Landing() {
                   <span>+200% Reach</span>
                 </div>
               </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Testimonials Section */}
+      <section id="testimonials" className="testimonials section">
+        <div className="container">
+          <div className="section-header">
+            <h2>Client <span className="gradient-text">Testimonials</span></h2>
+            <p>Hear what our clients say about working with brandUp</p>
+          </div>
+          <div className="testimonials-grid">
+            <div className="testimonial-card glass-card">
+              <div className="testimonial-header">
+                <div className="testimonial-avatar" style={{ background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)' }}>
+                  <span className="avatar-initials">MJ</span>
+                </div>
+                <div className="testimonial-info">
+                  <h4>Michael Johnson</h4>
+                  <p className="testimonial-role">CEO, TechFlow Solutions</p>
+                  <div className="testimonial-stars">
+                    <span className="star filled">★</span>
+                    <span className="star filled">★</span>
+                    <span className="star filled">★</span>
+                    <span className="star filled">★</span>
+                    <span className="star filled">★</span>
+                  </div>
+                </div>
+              </div>
+              <p className="testimonial-text">
+                "Working with brandUp has been a game-changer for our business. Their strategic approach to digital marketing helped us increase our online presence by 300% in just 6 months. The team is professional, creative, and truly understands our industry."
+              </p>
+              <div className="testimonial-footer">
+                <span className="testimonial-date">2 months ago</span>
+                <span className="testimonial-verified">✓ Verified Client</span>
+              </div>
+            </div>
+
+            <div className="testimonial-card glass-card">
+              <div className="testimonial-header">
+                <div className="testimonial-avatar" style={{ background: 'linear-gradient(135deg, #f093fb 0%, #f5576c 100%)' }}>
+                  <span className="avatar-initials">SC</span>
+                </div>
+                <div className="testimonial-info">
+                  <h4>Sarah Chen</h4>
+                  <p className="testimonial-role">Marketing Director, StyleHub</p>
+                  <div className="testimonial-stars">
+                    <span className="star filled">★</span>
+                    <span className="star filled">★</span>
+                    <span className="star filled">★</span>
+                    <span className="star filled">★</span>
+                    <span className="star filled">★</span>
+                  </div>
+                </div>
+              </div>
+              <p className="testimonial-text">
+                "The ROI we've seen from our campaigns with brandUp is incredible. They don't just execute - they strategize, analyze, and optimize continuously. Our social media engagement has skyrocketed, and we're seeing real conversions."
+              </p>
+              <div className="testimonial-footer">
+                <span className="testimonial-date">3 months ago</span>
+                <span className="testimonial-verified">✓ Verified Client</span>
+              </div>
+            </div>
+
+            <div className="testimonial-card glass-card">
+              <div className="testimonial-header">
+                <div className="testimonial-avatar" style={{ background: 'linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)' }}>
+                  <span className="avatar-initials">DR</span>
+                </div>
+                <div className="testimonial-info">
+                  <h4>David Rodriguez</h4>
+                  <p className="testimonial-role">Founder, GreenLeaf Organics</p>
+                  <div className="testimonial-stars">
+                    <span className="star filled">★</span>
+                    <span className="star filled">★</span>
+                    <span className="star filled">★</span>
+                    <span className="star filled">★</span>
+                    <span className="star filled">★</span>
+                  </div>
+                </div>
+              </div>
+              <p className="testimonial-text">
+                "As a small business owner, I was skeptical about investing in digital marketing. brandUp proved me wrong! Their personalized approach and transparent reporting gave me confidence. We've tripled our customer base in one year."
+              </p>
+              <div className="testimonial-footer">
+                <span className="testimonial-date">1 month ago</span>
+                <span className="testimonial-verified">✓ Verified Client</span>
+              </div>
+            </div>
+
+            <div className="testimonial-card glass-card">
+              <div className="testimonial-header">
+                <div className="testimonial-avatar" style={{ background: 'linear-gradient(135deg, #fa709a 0%, #fee140 100%)' }}>
+                  <span className="avatar-initials">EP</span>
+                </div>
+                <div className="testimonial-info">
+                  <h4>Emily Parker</h4>
+                  <p className="testimonial-role">VP Marketing, FinanceFirst</p>
+                  <div className="testimonial-stars">
+                    <span className="star filled">★</span>
+                    <span className="star filled">★</span>
+                    <span className="star filled">★</span>
+                    <span className="star filled">★</span>
+                    <span className="star half">★</span>
+                  </div>
+                </div>
+              </div>
+              <p className="testimonial-text">
+                "brandUp's data-driven approach is exactly what we needed. Their analytics and insights have helped us make smarter marketing decisions. The team is responsive, knowledgeable, and always goes the extra mile."
+              </p>
+              <div className="testimonial-footer">
+                <span className="testimonial-date">4 months ago</span>
+                <span className="testimonial-verified">✓ Verified Client</span>
+              </div>
+            </div>
+
+            <div className="testimonial-card glass-card">
+              <div className="testimonial-header">
+                <div className="testimonial-avatar" style={{ background: 'linear-gradient(135deg, #30cfd0 0%, #330867 100%)' }}>
+                  <span className="avatar-initials">JL</span>
+                </div>
+                <div className="testimonial-info">
+                  <h4>James Liu</h4>
+                  <p className="testimonial-role">Owner, Urban Fitness</p>
+                  <div className="testimonial-stars">
+                    <span className="star filled">★</span>
+                    <span className="star filled">★</span>
+                    <span className="star filled">★</span>
+                    <span className="star filled">★</span>
+                    <span className="star filled">★</span>
+                  </div>
+                </div>
+              </div>
+              <p className="testimonial-text">
+                "From brand strategy to execution, brandUp delivered beyond our expectations. They helped us rebrand and launch a successful digital campaign that brought in 500+ new members in 3 months. Highly recommend!"
+              </p>
+              <div className="testimonial-footer">
+                <span className="testimonial-date">5 months ago</span>
+                <span className="testimonial-verified">✓ Verified Client</span>
+              </div>
+            </div>
+
+            <div className="testimonial-card glass-card">
+              <div className="testimonial-header">
+                <div className="testimonial-avatar" style={{ background: 'linear-gradient(135deg, #a8edea 0%, #fed6e3 100%)' }}>
+                  <span className="avatar-initials">RK</span>
+                </div>
+                <div className="testimonial-info">
+                  <h4>Rachel Kim</h4>
+                  <p className="testimonial-role">CMO, CloudTech Inc</p>
+                  <div className="testimonial-stars">
+                    <span className="star filled">★</span>
+                    <span className="star filled">★</span>
+                    <span className="star filled">★</span>
+                    <span className="star filled">★</span>
+                    <span className="star filled">★</span>
+                  </div>
+                </div>
+              </div>
+              <p className="testimonial-text">
+                "The creative team at brandUp is phenomenal. They transformed our content marketing strategy and helped us establish thought leadership in our industry. Our website traffic increased by 400% and lead quality improved significantly."
+              </p>
+              <div className="testimonial-footer">
+                <span className="testimonial-date">2 months ago</span>
+                <span className="testimonial-verified">✓ Verified Client</span>
+              </div>
+            </div>
+          </div>
+
+          <div className="testimonials-stats">
+            <div className="testimonial-stat">
+              <h3 className="gradient-text">4.9/5</h3>
+              <p>Average Rating</p>
+              <div className="stat-stars">
+                <span className="star filled">★</span>
+                <span className="star filled">★</span>
+                <span className="star filled">★</span>
+                <span className="star filled">★</span>
+                <span className="star filled">★</span>
+              </div>
+            </div>
+            <div className="testimonial-stat">
+              <h3 className="gradient-text">200+</h3>
+              <p>Happy Clients</p>
+            </div>
+            <div className="testimonial-stat">
+              <h3 className="gradient-text">98%</h3>
+              <p>Would Recommend</p>
             </div>
           </div>
         </div>
