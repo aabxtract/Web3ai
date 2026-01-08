@@ -34,7 +34,7 @@ function SignUp() {
                 <div className="auth-visual">
                     <div className="auth-visual-content">
                         <Link to="/" className="auth-logo">
-                            <span className="gradient-text">Elevate</span>
+                            <span className="gradient-text">brandUp</span>
                             <span className="logo-dot">.</span>
                         </Link>
                         <h2>Start Your Journey</h2>
