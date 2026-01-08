@@ -20,7 +20,7 @@ function Landing() {
         <div className="container">
           <div className="nav-content">
             <div className="logo">
-              <span className="gradient-text">Elevate</span>
+              <span className="gradient-text">brandUp</span>
               <span className="logo-dot">.</span>
             </div>
             <ul className="nav-links">
@@ -266,14 +266,14 @@ function Landing() {
         <div className="container">
           <div className="contact-content">
             <div className="contact-text">
-              <h2>Ready to <span className="gradient-text">Elevate</span> Your Brand?</h2>
+              <h2>Ready to <span className="gradient-text">brandUp</span> Your Brand?</h2>
               <p>Let's discuss how we can help you achieve your digital marketing goals and drive real results.</p>
               <div className="contact-info">
                 <div className="info-item">
                   <span className="info-icon">📧</span>
                   <div>
                     <strong>Email</strong>
-                    <p>hello@elevatedigital.com</p>
+                    <p>hello@brandup.com</p>
                   </div>
                 </div>
                 <div className="info-item">
@@ -319,7 +319,7 @@ function Landing() {
           <div className="footer-content">
             <div className="footer-brand">
               <div className="logo">
-                <span className="gradient-text">Elevate</span>
+                <span className="gradient-text">brandUp</span>
                 <span className="logo-dot">.</span>
               </div>
               <p>Transforming brands through innovative digital marketing strategies.</p>
@@ -361,7 +361,7 @@ function Landing() {
             </div>
           </div>
           <div className="footer-bottom">
-            <p>&copy; 2026 Elevate Digital. All rights reserved.</p>
+            <p>&copy; 2026 brandUp. All rights reserved.</p>
           </div>
         </div>
       </footer>
