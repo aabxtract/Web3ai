@@ -1,8 +1,9 @@
 import { useState } from 'react'
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 import './Auth.css'
 
 function Login() {
+    const navigate = useNavigate()
     const [formData, setFormData] = useState({
         email: '',
         password: ''
@@ -12,6 +13,8 @@ function Login() {
         e.preventDefault()
         // Handle login logic here
         console.log('Login:', formData)
+        // Redirect to dashboard
+        navigate('/dashboard')
     }
 
     const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
