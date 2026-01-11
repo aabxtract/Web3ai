@@ -1,10 +1,24 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
 import './Dashboard.css'
 
 function Dashboard() {
     const navigate = useNavigate()
     const [activeTab, setActiveTab] = useState('overview')
+    const [theme, setTheme] = useState(() => {
+        // Get theme from localStorage or default to 'dark'
+        return localStorage.getItem('theme') || 'dark'
+    })
+
+    // Apply theme to document root
+    useEffect(() => {
+        document.documentElement.setAttribute('data-theme', theme)
+        localStorage.setItem('theme', theme)
+    }, [theme])
+
+    const toggleTheme = () => {
+        setTheme(prevTheme => prevTheme === 'dark' ? 'light' : 'dark')
+    }
 
     const handleLogout = () => {
         // Handle logout logic here
@@ -84,7 +98,17 @@ function Dashboard() {
                             <h1>Welcome back! 👋</h1>
                             <p>Here's what's happening with your marketing today</p>
                         </div>
-                        <button className="btn-primary">Create Campaign</button>
+                        <div style={{ display: 'flex', alignItems: 'center' }}>
+                            <button className="btn-primary">Create Campaign</button>
+                            <button
+                                className="theme-toggle"
+                                onClick={toggleTheme}
+                                aria-label="Toggle theme"
+                                title={`Switch to ${theme === 'dark' ? 'light' : 'dark'} mode`}
+                            >
+                                {theme === 'dark' ? '☀️' : '🌙'}
+                            </button>
+                        </div>
                     </div>
                 </header>
 

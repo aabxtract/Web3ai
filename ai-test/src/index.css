@@ -6,27 +6,28 @@
   --color-secondary: hsl(320, 85%, 60%);
   --color-accent: hsl(180, 85%, 55%);
   --color-accent-warm: hsl(30, 95%, 60%);
-  
+
+  /* Dark Mode Colors */
   --color-bg-dark: hsl(240, 15%, 8%);
   --color-bg-darker: hsl(240, 20%, 5%);
   --color-bg-card: hsl(240, 15%, 12%);
   --color-text-primary: hsl(0, 0%, 98%);
   --color-text-secondary: hsl(0, 0%, 75%);
   --color-text-muted: hsl(0, 0%, 55%);
-  
+
   /* Gradients */
   --gradient-primary: linear-gradient(135deg, var(--color-primary) 0%, var(--color-secondary) 100%);
   --gradient-accent: linear-gradient(135deg, var(--color-accent) 0%, var(--color-primary) 100%);
   --gradient-warm: linear-gradient(135deg, var(--color-accent-warm) 0%, var(--color-secondary) 100%);
   --gradient-mesh: radial-gradient(at 0% 0%, hsl(260, 85%, 30%) 0px, transparent 50%),
-                   radial-gradient(at 100% 0%, hsl(320, 85%, 30%) 0px, transparent 50%),
-                   radial-gradient(at 100% 100%, hsl(180, 85%, 30%) 0px, transparent 50%),
-                   radial-gradient(at 0% 100%, hsl(30, 95%, 30%) 0px, transparent 50%);
-  
+    radial-gradient(at 100% 0%, hsl(320, 85%, 30%) 0px, transparent 50%),
+    radial-gradient(at 100% 100%, hsl(180, 85%, 30%) 0px, transparent 50%),
+    radial-gradient(at 0% 100%, hsl(30, 95%, 30%) 0px, transparent 50%);
+
   /* Typography */
   --font-primary: 'Outfit', sans-serif;
   --font-secondary: 'Inter', sans-serif;
-  
+
   /* Spacing */
   --spacing-xs: 0.5rem;
   --spacing-sm: 1rem;
@@ -34,23 +35,43 @@
   --spacing-lg: 4rem;
   --spacing-xl: 6rem;
   --spacing-2xl: 8rem;
-  
+
   /* Border Radius */
   --radius-sm: 0.5rem;
   --radius-md: 1rem;
   --radius-lg: 1.5rem;
   --radius-xl: 2rem;
-  
+
   /* Shadows */
   --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.1);
   --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.2);
   --shadow-lg: 0 8px 32px rgba(0, 0, 0, 0.3);
   --shadow-glow: 0 0 40px rgba(160, 100, 255, 0.3);
-  
+
   /* Transitions */
   --transition-fast: 0.2s ease;
   --transition-base: 0.3s ease;
   --transition-slow: 0.5s ease;
+}
+
+/* Light Mode Theme */
+[data-theme="light"] {
+  --color-bg-dark: hsl(0, 0%, 98%);
+  --color-bg-darker: hsl(0, 0%, 95%);
+  --color-bg-card: hsl(0, 0%, 100%);
+  --color-text-primary: hsl(240, 15%, 15%);
+  --color-text-secondary: hsl(240, 5%, 35%);
+  --color-text-muted: hsl(240, 5%, 55%);
+
+  --gradient-mesh: radial-gradient(at 0% 0%, hsl(260, 85%, 85%) 0px, transparent 50%),
+    radial-gradient(at 100% 0%, hsl(320, 85%, 85%) 0px, transparent 50%),
+    radial-gradient(at 100% 100%, hsl(180, 85%, 85%) 0px, transparent 50%),
+    radial-gradient(at 0% 100%, hsl(30, 95%, 85%) 0px, transparent 50%);
+
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.08);
+  --shadow-lg: 0 8px 32px rgba(0, 0, 0, 0.12);
+  --shadow-glow: 0 0 40px rgba(160, 100, 255, 0.15);
 }
 
 * {
@@ -85,7 +106,12 @@ body::before {
   pointer-events: none;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: var(--font-primary);
   font-weight: 700;
   line-height: 1.2;
@@ -193,6 +219,7 @@ button {
     opacity: 0;
     transform: translateY(30px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
@@ -203,15 +230,19 @@ button {
   from {
     opacity: 0;
   }
+
   to {
     opacity: 1;
   }
 }
 
 @keyframes float {
-  0%, 100% {
+
+  0%,
+  100% {
     transform: translateY(0);
   }
+
   50% {
     transform: translateY(-20px);
   }
@@ -221,18 +252,23 @@ button {
   0% {
     background-position: 0% 50%;
   }
+
   50% {
     background-position: 100% 50%;
   }
+
   100% {
     background-position: 0% 50%;
   }
 }
 
 @keyframes pulse-glow {
-  0%, 100% {
+
+  0%,
+  100% {
     box-shadow: 0 0 20px rgba(160, 100, 255, 0.3);
   }
+
   50% {
     box-shadow: 0 0 40px rgba(160, 100, 255, 0.6);
   }
@@ -282,7 +318,7 @@ button {
   .section {
     padding: var(--spacing-lg) 0;
   }
-  
+
   .container {
     padding: 0 var(--spacing-sm);
   }
